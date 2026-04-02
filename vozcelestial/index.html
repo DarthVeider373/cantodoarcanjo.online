@@ -2,14 +2,10 @@
 <html lang="pt-BR">
 
 <head>
-    <meta name="x-poe-datastore-behavior" content="local_only">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deus Está Te Chamando!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
 
     <script>!function (i, n) { i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now()) }(window, performance);</script>
     <link rel="preload" href="https://scripts.converteai.net/cda0fd17-3b99-44d2-a83a-fc66435cb2df/players/69cd76cb8d9035de49c37b82/v4/player.js" as="script">
@@ -19,8 +15,6 @@
     <link rel="dns-prefetch" href="https://scripts.converteai.net">
     <link rel="dns-prefetch" href="https://images.converteai.net">
     <link rel="dns-prefetch" href="https://api.vturb.com.br">
-
-
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -41,11 +35,7 @@
         /* ========== HEADER ========== */
         header {
             background: #2979FF;
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            z-index: 1000;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -74,7 +64,7 @@
         .marquee-text {
             display: inline-block;
             white-space: nowrap;
-            animation: marquee 14s linear infinite;
+            animation: marquee 30s linear infinite;
             font-size: 13px;
             font-weight: 300;
             letter-spacing: 0.5px;
@@ -84,7 +74,7 @@
 
         @keyframes marquee {
             0% {
-                transform: translateX(100%);
+                transform: translateX(0%);
             }
 
             100% {
@@ -94,9 +84,7 @@
 
         /* ========== VIDEO SECTION ========== */
         .video-section {
-            margin-top: 48px;
             padding: 36px 0 0;
-            /* Margem tripla entre header e vídeo */
             text-align: center;
             background: transparent;
         }
@@ -327,7 +315,6 @@
         /* ========== RESPONSIVE ========== */
         @media (max-width: 480px) {
             header {
-                height: 44px;
                 padding: 0 14px;
             }
 
@@ -335,9 +322,7 @@
                 font-size: 18px;
             }
 
-            /* Margem tripla entre header e vídeo no mobile */
             .video-section {
-                margin-top: 44px;
                 padding: 30px 0 0;
             }
 
@@ -363,9 +348,6 @@
 
 <body>
 
-    <!-- ==========================================
-         HEADER - Barra azul fixa no topo
-    ============================================ -->
     <header>
         <button class="header-btn" aria-label="Menu">
             <i class="fas fa-bars"></i>
@@ -378,49 +360,20 @@
         </button>
     </header>
 
-    <!-- ==========================================
-         SEÇÃO DO VÍDEO
-         
-         👇 COMO ADICIONAR SEU VÍDEO DO VTURB:
-         
-         1. Acesse o painel do Vturb
-         2. Copie o código embed do seu vídeo
-         3. APAGUE todo o <div class="video-placeholder">...</div> abaixo
-         4. COLE o código embed do Vturb no lugar
-         5. O código deve ficar DENTRO do <div class="video-container">
-         
-         Exemplo de como vai ficar:
-         
-         <div class="video-container">
-             <iframe src="https://player.vturb.com.br/SEU-VIDEO-ID" 
-                 width="100%" height="100%" 
-                 style="aspect-ratio:16/9; border:none;" 
-                 allow="autoplay" allowfullscreen>
-             </iframe>
-         </div>
-    ============================================ -->
     <section class="video-section">
 
         <vturb-smartplayer id="vid-69cd76cb8d9035de49c37b82" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
         <script type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/cda0fd17-3b99-44d2-a83a-fc66435cb2df/players/69cd76cb8d9035de49c37b82/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
 
-
     </section>
 
-    <!-- ==========================================
-         CONTADOR DE ESPECTADORES
-    ============================================ -->
     <div class="viewers-section">
         <span class="viewers-text"><strong id="viewerCount">1.121</strong> pessoas estão assistindo a esse vídeo agora</span>
     </div>
 
-    <!-- ==========================================
-         SEÇÃO DE COMENTÁRIOS
-    ============================================ -->
     <section class="comments-section">
         <div class="comments-header">Mostrando 9 de 6349 comentários</div>
 
-        <!-- Comentário 1 - Frei Gilson -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/frei.jpg" alt="Frei Gilson">
@@ -446,7 +399,6 @@
             </div>
         </div>
 
-        <!-- Comentário 2 - Padre Reginaldo -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/reginaldo.jpg" alt="Padre Reginaldo">
@@ -472,7 +424,6 @@
             </div>
         </div>
 
-        <!-- Comentário 3 - Magda Fonseca -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/magda.jpg" alt="Magda">
@@ -498,7 +449,6 @@
             </div>
         </div>
 
-        <!-- Comentário 4 - Eunice de Jesus -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/eunice.jpg" alt="Eunice">
@@ -524,7 +474,6 @@
             </div>
         </div>
 
-        <!-- Comentário 5 - Cibele Moura -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/cibele.jpg" alt="Cibele">
@@ -550,7 +499,6 @@
             </div>
         </div>
 
-        <!-- Comentário 6 - Fernanda Mendes -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/fernanda.jpg" alt="Fernanda">
@@ -576,7 +524,6 @@
             </div>
         </div>
 
-        <!-- Comentário 7 - Romildo Alves -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/romildo.jpg" alt="Romildo">
@@ -602,7 +549,6 @@
             </div>
         </div>
 
-        <!-- Comentário 8 - Janaína Melo -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/janaina.jpg" alt="Janaína">
@@ -628,7 +574,6 @@
             </div>
         </div>
 
-        <!-- Comentário 9 - Manoel Santos -->
         <div class="comment">
             <div class="comment-avatar">
                 <img src="./imagens/manoel.jpg" alt="Manoel">
@@ -656,7 +601,6 @@
 
     </section>
 
-
     <div class="login-prompt">
         Você deve estar logado para comentar.
     </div>
@@ -669,9 +613,6 @@
         </div>
     </footer>
 
-    <!-- ==========================================
-         SCRIPT - CONTADOR DE ESPECTADORES
-    ============================================ -->
     <script>
         (function () {
             const el = document.getElementById('viewerCount');
@@ -695,8 +636,6 @@
             setTimeout(updateCount, 3000);
         })();
     </script>
-
-
 
 </body>
 
