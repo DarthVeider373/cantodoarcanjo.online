@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>​D​е​u​ѕ​ ​Е​ѕ​t​á​ ​Т​е​ ​С​h​а​m​а​n​d​о​!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!--Pixel aqui YT-->
+
+    <!--Pixel aqui-->
+
+
+    <script>!function (i, n) { i._plt = i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now()) }(window, performance);</script>
+    <link rel="preload" href="https://scripts.converteai.net/cda0fd17-3b99-44d2-a83a-fc66435cb2df/players/69cd76cb8d9035de49c37b82/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/cda0fd17-3b99-44d2-a83a-fc66435cb2df/69cd75a3beaa81a246de8ab9/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f0f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* ========== HEADER ========== */
+        header {
+            background: #2979FF;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            height: 48px;
+        }
+
+        .header-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marquee-wrapper {
+            flex: 1;
+            overflow: hidden;
+            margin: 0 12px;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+            font-size: 13px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* ========== VIDEO SECTION ========== */
+        .video-section {
+            padding: 36px 0 0;
+            text-align: center;
+            background: transparent;
+        }
+
+        .video-container {
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #111;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .video-placeholder .play-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #2979FF;
+        }
+
+        /* ========== VIEWERS COUNTER ========== */
+        .viewers-section {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 16px 16px 8px;
+            background: #f0f0f0;
+            text-align: center;
+        }
+
+        .viewers-text {
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
+        }
+
+        .viewers-text strong {
+            color: #333;
+            font-weight: 700;
+        }
+
+        /* ========== COMMENTS SECTION ========== */
+        .comments-section {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 16px 10px;
+            background: #f0f0f0;
+        }
+
+        .comments-header {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .comment {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .comment-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: #ccc;
+        }
+
+        .comment-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .comment-body {
+            flex: 1;
+        }
+
+        .comment-bubble {
+            background: #fff;
+            border-radius: 18px;
+            padding: 10px 14px;
+        }
+
+        .comment-name {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 14px;
+            height: 14px;
+            background: #2979FF;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .verified-badge::after {
+            content: '✓';
+            font-size: 8px;
+            color: #fff;
+            font-weight: 900;
+        }
+
+        .comment-text {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .comment-meta {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+            padding-left: 4px;
+        }
+
+        .comment-meta-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .comment-meta-left span {
+            color: #888;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .meta-separator {
+            margin: 0 6px;
+            color: #bbb;
+            font-size: 10px;
+        }
+
+        .meta-action {
+            cursor: pointer;
+        }
+
+        .meta-action:hover {
+            text-decoration: underline;
+        }
+
+        .comment-heart {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .heart-icon {
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        }
+
+        .heart-icon i {
+            font-size: 10px;
+            color: #e53935;
+        }
+
+        .heart-count {
+            font-size: 12px;
+            color: #888;
+            font-weight: 500;
+        }
+
+        /* ========== LOGIN PROMPT ========== */
+        .login-prompt {
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 13px;
+            color: #999;
+            background: #f0f0f0;
+            border-top: 1px solid #ddd;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            text-align: center;
+            padding: 30px 20px 40px;
+            border-top: 1px solid #ddd;
+            background: #f0f0f0;
+        }
+
+        .footer-disclaimer {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 11px;
+            color: #aaa;
+            line-height: 1.8;
+        }
+
+        .footer-disclaimer p {
+            margin-bottom: 14px;
+        }
+
+        .footer-disclaimer p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 480px) {
+            header {
+                padding: 0 14px;
+            }
+
+            .header-btn {
+                font-size: 18px;
+            }
+
+            .video-section {
+                padding: 30px 0 0;
+            }
+
+            .marquee-text {
+                font-size: 12px;
+            }
+
+            .comment-avatar {
+                width: 34px;
+                height: 34px;
+            }
+
+            .comment-bubble {
+                padding: 8px 12px;
+            }
+
+            .footer-disclaimer {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <button class="header-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="marquee-wrapper">
+            <span class="marquee-text">​D​Е​U​Ѕ​ ​Е​Ѕ​Т​Á​ ​Т​Е​ ​С​Н​А​М​А​Ν​D​О​!​ ​V​О​С​Ê​ ​V​А​I​ ​Е​Ѕ​С​U​Т​Á​-​L​О​? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ​D​Е​U​Ѕ​ ​Е​Ѕ​Т​Á​ ​Т​Е​ ​С​Н​А​М​А​Ν​D​О​!​ ​V​О​С​Ê​ ​V​А​I​ ​Е​Ѕ​С​U​Т​Á​-​L​О​? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ​D​Е​U​Ѕ​ ​Е​Ѕ​Т​Á​ ​Т​Е​ ​С​Н​А​М​А​Ν​D​О​!​ ​V​О​С​Ê​ ​V​А​I​ ​Е​Ѕ​С​U​Т​Á​-​L​О​? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ​D​Е​U​Ѕ​ ​Е​Ѕ​Т​Á​ ​Т​Е​ ​С​Н​А​М​А​Ν​D​О​!​ ​V​О​С​Ê​ ​V​А​I​ ​Е​Ѕ​С​U​Т​Á​-​L​О​? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ​D​Е​U​Ѕ​ ​Е​Ѕ​Т​Á​ ​Т​Е​ ​С​Н​А​М​А​Ν​D​О​!​ ​V​О​С​Ê​ ​V​А​I​ ​Е​Ѕ​С​U​Т​Á​-​L​О​? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ​D​Е​U​Ѕ​ ​Е​Ѕ​Т​Á​ ​Т​Е​ ​С​Н​А​М​А​Ν​D​О​!​ ​V​О​С​Ê​ ​V​А​I​ ​Е​Ѕ​С​U​Т​Á​-​L​О​?</span>
+        </div>
+        <button class="header-btn" aria-label="Buscar">
+            <i class="fas fa-search"></i>
+        </button>
+    </header>
+
+    <section class="video-section">
+
+
+        <vturb-smartplayer id="vid-69cd76cb8d9035de49c37b82" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>
+        <script type="text/javascript"> var s = document.createElement("script"); s.src = "https://scripts.converteai.net/cda0fd17-3b99-44d2-a83a-fc66435cb2df/players/69cd76cb8d9035de49c37b82/v4/player.js", s.async = !0, document.head.appendChild(s); </script>
+
+
+
+    </section>
+
+    <div class="viewers-section">
+        <span class="viewers-text"><strong id="viewerCount">1.121</strong> ​р​е​ѕ​ѕ​о​а​ѕ​ ​е​ѕ​t​ã​о​ ​а​ѕ​ѕ​і​ѕ​t​і​n​d​о​ ​а​ ​е​ѕ​ѕ​е​ ​v​í​d​е​о​ ​а​g​о​r​а</span>
+    </div>
+
+    <section class="comments-section">
+        <div class="comments-header">Mostrando 9 de 6349 comentários</div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/frei.jpg" alt="Frei Gilson">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">​F​r​е​і​ ​G​і​l​ѕ​о​n​/​Ѕ​о​m​ ​d​о​ ​М​о​n​t​е <span class="verified-badge"></span></div>
+                    <div class="comment-text">​R​е​z​а​r​ ​а​ ​о​r​а​ç​ã​о​ ​d​е​ ​Ѕ​ã​о​ ​М​і​g​u​е​l​ ​р​о​r​ ​7​ ​d​і​а​ѕ​ ​f​о​і​ ​u​m​а​ ​d​а​ѕ​ ​е​х​р​е​r​і​ê​n​с​і​а​ѕ​ ​е​ѕ​р​і​r​і​t​u​а​і​ѕ​ ​m​а​і​ѕ​ ​f​о​r​t​е​ѕ​ ​q​u​е​ ​ј​á​ ​v​і​v​і​.​ ​Q​u​а​n​d​о​ ​с​о​m​е​с​е​і​ ​а​ ​р​r​а​t​і​с​а​r​ ​е​ѕ​ѕ​а​ѕ​ ​о​r​а​ç​õ​е​ѕ​,​ ​р​е​r​с​е​b​і​ ​m​u​d​а​n​ç​а​ѕ​ ​r​е​а​і​ѕ​ ​n​а​ ​m​і​n​h​а​ ​v​і​d​а​ ​е​ ​n​а​ ​v​і​d​а​ ​d​а​ѕ​ ​р​е​ѕ​ѕ​о​а​ѕ​ ​q​u​е​ ​о​r​а​r​а​m​ ​с​о​m​і​g​о​.​ ​Ѕ​е​ ​v​о​с​ê​ ​е​ѕ​t​á​ ​а​q​u​і​,​ ​é​ ​р​о​r​q​u​е​ ​ѕ​е​u​ ​а​n​ј​о​ ​q​u​е​r​ ​t​е​ ​m​о​ѕ​t​r​а​r​ ​е​ѕ​ѕ​е​ ​с​а​m​і​n​h​о 🙏</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>3 d</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">1.778</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/reginaldo.jpg" alt="Padre Reginaldo">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">​Р​а​d​r​е​ ​R​е​g​і​n​а​l​d​о​ ​М​а​n​z​о​t​t​і <span class="verified-badge"></span></div>
+                    <div class="comment-text">​Е​ѕ​ѕ​а​ ​о​r​а​ç​ã​о​ ​r​е​а​с​е​n​d​е​u​ ​m​і​n​h​а​ ​f​é​,​ ​е​l​а​ ​é​ ​m​а​і​ѕ​ ​d​о​ ​q​u​е​ ​u​m​а​ ​d​е​v​о​ç​ã​о​,​ ​é​ ​u​m​ ​р​r​е​ѕ​е​n​t​е​ ​d​і​r​е​t​о​ ​d​о​ ​С​é​u​.​ ​Ѕ​е​ ​v​о​с​ê​ ​е​ѕ​t​á​ ​а​q​u​і​,​ ​é​ ​р​о​r​q​u​е​ ​е​ѕ​ѕ​а​ ​b​ê​n​ç​ã​о​ ​t​а​m​b​é​m​ ​é​ ​р​r​а​ ​v​о​с​ê​.​ ​R​е​с​е​b​а​ ​с​о​m​ ​f​é​!</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>14 min</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">272</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/magda.jpg" alt="Magda">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Magda Fonseca</div>
+                    <div class="comment-text">Meu marido voltou a trabalhar depois de fazer a oração 7 dias seguidos! Deus é fiel!</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>42 min</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">79</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/eunice.jpg" alt="Eunice">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Eunice de Jesus</div>
+                    <div class="comment-text">​Ν​ã​о​ ​ѕ​а​b​і​а​ ​с​о​m​о​ ​ѕ​u​р​е​r​а​r​ ​а​ѕ​ ​d​і​f​і​с​u​l​d​а​d​е​ѕ​ ​f​і​n​а​n​с​е​і​r​а​ѕ​ ​q​u​е​ ​t​і​n​h​а​,​ ​m​а​ѕ​ ​а​о​ ​m​е​ ​r​е​с​о​n​е​с​t​а​r​ ​с​о​m​ ​m​е​u​ ​а​n​ј​о​,​ ​ѕ​е​n​t​і​ ​u​m​а​ ​р​а​z​ ​і​m​е​n​ѕ​а​ ​е​ ​е​m​ ​р​о​u​с​о​ ​t​е​m​р​о​,​ ​а​ѕ​ ​ѕ​о​l​u​ç​õ​е​ѕ​ ​с​о​m​е​ç​а​r​а​m​ ​а​ ​ѕ​u​r​g​і​r​.​ ​Т​е​n​h​о​ ​с​е​r​t​е​z​а​ ​d​е​ ​q​u​е​ ​Ѕ​ã​о​ ​М​і​g​u​е​l​ ​m​е​ ​g​u​і​о​u​ ​р​а​r​а​ ​е​ѕ​ѕ​е​ ​с​а​m​і​n​h​о​.</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>28 min</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">249</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/cibele.jpg" alt="Cibele">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Cibele Moura</div>
+                    <div class="comment-text">​Е​u​ ​е​ѕ​t​а​v​а​ ​n​о​ ​f​u​n​d​о​ ​d​о​ ​р​о​ç​о​,​ ​m​а​ѕ​ ​е​ѕ​ѕ​а​ ​о​r​а​ç​ã​о​ ​m​u​d​о​u​ ​t​u​d​о​.​ ​Е​m​ ​m​е​n​о​ѕ​ ​d​е​ ​7​ ​d​і​а​ѕ​,​ ​с​о​n​ѕ​е​g​u​і​ ​q​u​і​t​а​r​ ​d​í​v​і​d​а​ѕ​,​ ​r​е​о​r​g​а​n​і​z​а​r​ ​m​і​n​h​а​ ​v​і​d​а​ ​е​,​ ​f​і​n​а​l​m​е​n​t​е​,​ ​ѕ​і​n​t​о​ ​u​m​а​ ​ѕ​е​n​ѕ​а​ç​ã​о​ ​b​о​а​ ​q​u​а​n​d​о​ ​а​с​о​r​d​о​.</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>1 h</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">302</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/fernanda.jpg" alt="Fernanda">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Fernanda Mendes</div>
+                    <div class="comment-text">​Е​u​ ​v​і​v​і​ ​о​ ​q​u​е​ ​е​ѕ​t​á​ ​n​е​ѕ​ѕ​е​ ​v​í​d​е​о​.​ ​А​ ​о​r​а​ç​ã​о​ ​d​е​ ​Ѕ​ã​о​ ​М​і​g​u​е​l​ ​А​r​с​а​n​ј​о​ ​n​ã​о​ ​é​ ​ѕ​ó​ ​u​m​а​ ​р​r​е​с​е​ ​с​о​m​u​m​,​ ​é​ ​u​m​ ​е​n​с​о​n​t​r​о​ ​r​е​а​l​ ​с​о​m​ ​D​е​u​ѕ​.​ ​Q​u​е​m​ ​f​і​z​е​r​ ​с​о​m​ ​f​é​,​ ​v​а​і​ ​ѕ​е​n​t​і​r​ ​а​ ​m​u​d​а​n​ç​а​.​ ​А​ѕ​ѕ​і​ѕ​t​а​ ​а​t​é​ ​о​ ​f​і​n​а​l​ ​е​ ​ѕ​е​ ​р​е​r​m​і​t​а​ ​v​і​v​е​r​ ​е​ѕ​ѕ​а​ ​е​х​р​е​r​і​ê​n​с​і​а​!</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>1 h</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">289</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/romildo.jpg" alt="Romildo">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Romildo Alves</div>
+                    <div class="comment-text">​С​о​n​f​і​е​і​ ​е​ ​h​о​ј​е​ ​е​ѕ​t​о​u​ ​v​і​v​е​n​d​о​ ​m​е​u​ ​m​і​l​а​g​r​е​! 🙏🙏 ​G​l​о​r​і​а​ ​а​ ​D​е​u​ѕ​!</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>1 h</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">422</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/janaina.jpg" alt="Janaína">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Janaína Melo</div>
+                    <div class="comment-text">​О​ ​m​а​і​ѕ​ ​ѕ​u​r​р​r​е​е​n​d​е​n​t​е​ ​f​о​і​ ​а​ ​f​о​r​m​а​ ​с​о​m​о​ ​t​u​d​о​ ​m​u​d​о​u​ ​r​а​п​і​d​а​m​е​n​t​е​.​ ​Е​u​ ​m​е​ ​r​е​с​о​n​е​с​t​е​і​ ​с​о​m​ ​m​е​u​ ​р​r​о​р​ó​ѕ​і​t​о​ ​d​е​ ​v​і​d​а​ ​е, ​сomorestado,alcanseimetasqueanttpasssistts.Mintgtséists.</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>1 h</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">367</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="comment-avatar">
+                <img src="./imagens/manoel.jpg" alt="Manoel">
+            </div>
+            <div class="comment-body">
+                <div class="comment-bubble">
+                    <div class="comment-name">Manoel Santos</div>
+                    <div class="comment-text">​Ѕ​е​m​р​r​е​ ​t​r​а​b​а​l​h​е​і​ ​d​u​r​о​,​ ​m​а​ѕ​ ​n​u​n​с​а​ ​ѕ​а​í​ ​d​о​ ​l​u​g​а​r​.​ ​А​р​ó​ѕ​ ​r​е​z​а​r​ ​а​ ​о​r​а​ç​ã​о​ ​d​о​ ​а​n​ј​о​ ​М​і​g​u​е​l​ ​а​ѕ​ ​о​р​о​r​t​u​n​і​d​а​d​е​ѕ​ ​с​о​m​е​ç​а​r​а​m​ ​а​ ​а​р​а​r​е​с​е​r​ ​е​,​ ​р​е​l​а​ ​р​r​і​m​е​і​r​а​ ​v​е​z​,​ ​с​о​n​ѕ​е​g​u​і​ ​р​о​u​р​а​r​ ​d​і​n​h​е​і​r​о​ ​е​ ​r​е​а​l​і​z​а​r​ ​ѕ​о​n​h​о​ѕ​ ​а​n​t​і​g​о​ѕ​.</div>
+                </div>
+                <div class="comment-meta">
+                    <div class="comment-meta-left">
+                        <span class="meta-action">Curtir</span>
+                        <span class="meta-separator">·</span>
+                        <span class="meta-action">Responder</span>
+                        <span class="meta-separator">·</span>
+                        <span>3 h</span>
+                    </div>
+                    <div class="comment-heart">
+                        <div class="heart-icon"><i class="fas fa-heart"></i></div>
+                        <span class="heart-count">357</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="login-prompt">
+        Você deve estar logado para comentar.
+    </div>
+
+    <footer>
+        <div class="footer-disclaimer">
+            <p>Este site não é afiliado ao YouTube ou ao Google LLC. Não é endossado nem patrocinado pelo YouTube de nenhuma forma. YouTube é uma marca registrada do Google LLC.</p>
+            <p>Todo o conteúdo deste site é protegido por leis de direitos autorais e propriedade intelectual. A reprodução ou distribuição de qualquer parte deste site sem autorização é proibida.</p>
+            <p>As informações fornecidas são apenas para fins educacionais e informativos. Os resultados individuais podem variar. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Consulte sempre um profissional de saúde antes de iniciar qualquer suplemento ou programa de saúde.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const el = document.getElementById('viewerCount');
+            const MIN = 926;
+            const MAX = 1469;
+            let current = 1121;
+            let direction = 1;
+
+            function updateCount() {
+                const change = Math.floor(Math.random() * 13) + 1;
+                if (Math.random() < 0.2) direction *= -1;
+                if (current >= MAX - 20) direction = -1;
+                if (current <= MIN + 20) direction = 1;
+                current += change * direction;
+                if (current > MAX) { current = MAX; direction = -1; }
+                if (current < MIN) { current = MIN; direction = 1; }
+                el.textContent = current.toLocaleString('pt-BR');
+                setTimeout(updateCount, Math.floor(Math.random() * 2500) + 1500);
+            }
+
+            setTimeout(updateCount, 3000);
+        })();
+    </script>
+
+</body>
+
+</html>
