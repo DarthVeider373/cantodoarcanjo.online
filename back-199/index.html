@@ -1,0 +1,1554 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oração Sagrada do Arcanjo Miguel — Última Chance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&amp;family=Cinzel+Decorative:wght@400;700;900&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Montserrat:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --burgundy: #4A0E0E;
+      --burgundy-light: #6B1515;
+      --gold: #C9A227;
+      --gold-light: #E8D48B;
+      --gold-dark: #9B7A1C;
+      --dark: #1A0A0A;
+      --dark-warm: #2A1111;
+      --cream: #FFF8E7;
+      --cream-dark: #F5E6C8;
+      --parchment: #F9F0DC;
+      --text-dark: #2A1111;
+      --text-body: #4A3030;
+      --text-light: #6B5050;
+      --success: #2E7D32;
+      --success-dark: #1B5E20;
+      --red-accent: #8B0000;
+      --white: #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--dark);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* === BACKGROUND CROSS PATTERN === */
+    .bg-sacred {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(201,162,39,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(74,14,14,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 60%, rgba(201,162,39,0.05) 0%, transparent 40%);
+      animation: sacredGlow 20s ease-in-out infinite;
+    }
+
+    @keyframes sacredGlow {
+      0%,100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      background: var(--cream);
+      min-height: 100vh;
+      box-shadow: 0 0 80px rgba(201,162,39,0.15);
+    }
+
+    /* === TOP SACRED BANNER === */
+    .sacred-banner {
+      background: linear-gradient(135deg, var(--burgundy) 0%, var(--dark) 100%);
+      text-align: center;
+      padding: 14px 20px;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold-dark);
+      position: relative;
+    }
+
+    .sacred-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    /* === HERO === */
+    .hero {
+      text-align: center;
+      padding: 50px 25px 45px;
+      background:
+        linear-gradient(180deg,
+          rgba(26,10,10,0.95) 0%,
+          rgba(74,14,14,0.92) 40%,
+          rgba(107,21,21,0.88) 70%,
+          rgba(74,14,14,0.95) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Stained glass light effect */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -30%; left: 30%; width: 40%; height: 160%;
+      background: radial-gradient(ellipse, rgba(201,162,39,0.06) 0%, transparent 70%);
+      animation: divineLight 8s ease-in-out infinite;
+    }
+
+    @keyframes divineLight {
+      0%,100% { opacity: 0.5; transform: translateY(0); }
+      50% { opacity: 1; transform: translateY(-20px); }
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent 5%, var(--gold) 30%, var(--gold-light) 50%, var(--gold) 70%, transparent 95%);
+    }
+
+    .hero-content { position: relative; z-index: 2; }
+
+    /* Cross icon */
+    .cross-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      position: relative;
+      animation: gentleFloat 4s ease-in-out infinite;
+      filter: drop-shadow(0 0 25px rgba(201,162,39,0.5));
+    }
+
+    .cross-icon::before {
+      content: '✝';
+      font-size: 70px;
+      color: var(--gold);
+      display: block;
+      text-shadow: 0 0 20px rgba(201,162,39,0.6);
+    }
+
+    @keyframes gentleFloat {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 50%, var(--gold-light) 100%);
+      color: var(--dark);
+      padding: 8px 28px;
+      border-radius: 3px;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 15px rgba(201,162,39,0.3);
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', 'Cinzel', serif;
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      line-height: 1.25;
+      margin-bottom: 22px;
+      color: var(--white);
+      font-weight: 700;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.5);
+    }
+
+    h1 .gold { color: var(--gold); }
+
+    .hero-subtitle {
+      font-family: 'Lora', serif;
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      line-height: 1.85;
+      margin-bottom: 20px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: italic;
+    }
+
+    .hero-subtitle strong { color: var(--gold-light); font-style: normal; }
+
+    /* === DIVIDERS === */
+    .sacred-divider {
+      text-align: center;
+      padding: 25px 0;
+      position: relative;
+    }
+
+    .sacred-divider::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-dark), transparent);
+    }
+
+    .sacred-divider span {
+      position: relative;
+      background: var(--cream);
+      padding: 0 20px;
+      font-size: 1.5rem;
+      color: var(--gold-dark);
+    }
+
+    /* === VERSE BOX === */
+    .verse-box {
+      background: linear-gradient(135deg, var(--parchment) 0%, var(--cream-dark) 100%);
+      border: 1px solid var(--gold-dark);
+      border-left: 5px solid var(--gold);
+      border-radius: 3px;
+      padding: 28px 30px;
+      margin: 30px 25px;
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-dark);
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(201,162,39,0.08);
+    }
+
+    .verse-box::before {
+      content: '"';
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3rem;
+      color: var(--gold);
+      opacity: 0.3;
+      font-style: normal;
+    }
+
+    .verse-ref {
+      display: block;
+      font-family: 'Cinzel', serif;
+      font-style: normal;
+      font-weight: 700;
+      margin-top: 12px;
+      color: var(--burgundy);
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    /* === SECTION TITLES === */
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.5rem, 4.5vw, 2.3rem);
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--text-dark);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .section-title .hl { color: var(--burgundy); }
+    .section-title .gold-hl { color: var(--gold-dark); }
+
+    /* === BODY TEXT === */
+    .story-text {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--text-body);
+      margin-bottom: 22px;
+      padding: 0 25px;
+    }
+
+    .story-text strong { color: var(--text-dark); }
+
+    /* === HIGHLIGHT BOX === */
+    .story-highlight {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--burgundy) 100%);
+      color: var(--white);
+      padding: 35px 30px;
+      margin: 35px 25px;
+      border-radius: 5px;
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      line-height: 1.85;
+      text-align: center;
+      font-weight: 500;
+      box-shadow: 0 8px 30px rgba(74,14,14,0.3);
+      border: 1px solid rgba(201,162,39,0.2);
+      position: relative;
+    }
+
+    .story-highlight .gold { color: var(--gold); font-weight: 700; }
+
+    .story-highlight::before,
+    .story-highlight::after {
+      content: '✝';
+      position: absolute;
+      font-size: 1.2rem;
+      color: rgba(201,162,39,0.25);
+    }
+
+    .story-highlight::before { top: 12px; left: 15px; }
+    .story-highlight::after { bottom: 12px; right: 15px; }
+
+    /* === ANGEL MESSAGE === */
+    .angel-message {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+      border: 2px solid var(--gold);
+      border-radius: 5px;
+      padding: 40px 30px;
+      margin: 40px 25px;
+      position: relative;
+      box-shadow: 0 8px 30px rgba(201,162,39,0.15);
+    }
+
+    .angel-message::before {
+      content: '⚔️';
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      background: var(--cream);
+      padding: 0 18px;
+    }
+
+    .angel-message p {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text-dark);
+      font-style: italic;
+      text-align: center;
+    }
+
+    .angel-message .angel-sig {
+      font-family: 'Cinzel', serif;
+      font-style: normal;
+      font-weight: 800;
+      color: var(--burgundy);
+      margin-top: 18px;
+      display: block;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    /* === CONTENT SECTIONS === */
+    .content-section {
+      padding: 45px 0;
+    }
+
+    .content-section.dark-bg {
+      background: linear-gradient(180deg, var(--dark) 0%, var(--burgundy) 50%, var(--dark) 100%);
+      color: var(--white);
+    }
+
+    .content-section.dark-bg .section-title { color: var(--gold); }
+    .content-section.dark-bg .story-text { color: rgba(255,255,255,0.85); }
+    .content-section.dark-bg .story-text strong { color: var(--gold-light); }
+
+    /* === BENEFITS === */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding: 0 25px;
+      margin-bottom: 30px;
+    }
+
+    .benefit-card {
+      background: var(--white);
+      border-radius: 5px;
+      padding: 25px;
+      border: 1px solid var(--cream-dark);
+      border-left: 4px solid var(--gold);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+
+    .benefit-card:hover {
+      border-left-color: var(--burgundy);
+      transform: translateX(5px);
+      box-shadow: 0 6px 25px rgba(74,14,14,0.1);
+    }
+
+    .benefit-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 55px;
+      height: 55px;
+      background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 10px rgba(74,14,14,0.2);
+    }
+
+    .benefit-text h4 {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .benefit-text p {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text-light);
+    }
+
+    /* === TIMER === */
+    .timer-section {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--burgundy) 100%);
+      border-radius: 5px;
+      padding: 30px;
+      margin: 35px 25px;
+      text-align: center;
+      border: 1px solid rgba(201,162,39,0.3);
+      box-shadow: 0 8px 30px rgba(74,14,14,0.3);
+    }
+
+    .timer-label {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .time-unit {
+      background: rgba(255,255,255,0.08);
+      border-radius: 5px;
+      padding: 18px 25px;
+      min-width: 100px;
+      text-align: center;
+      border: 1px solid rgba(201,162,39,0.25);
+    }
+
+    .time-value {
+      font-family: 'Cinzel', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      display: block;
+      line-height: 1;
+      color: var(--gold);
+    }
+
+    .time-label-text {
+      font-family: 'Lora', serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-top: 6px;
+      color: var(--gold-light);
+      letter-spacing: 2px;
+    }
+
+    /* === PRICE BOX === */
+    .price-box {
+      background: var(--white);
+      border: 3px solid var(--gold);
+      border-radius: 5px;
+      padding: 45px 30px;
+      margin: 40px 25px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(201,162,39,0.15);
+      text-align: center;
+    }
+
+    .price-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--burgundy), var(--gold), var(--burgundy));
+    }
+
+    .price-ribbon {
+      position: absolute;
+      top: 22px;
+      right: -32px;
+      background: linear-gradient(135deg, var(--burgundy) 0%, var(--red-accent) 100%);
+      color: var(--white);
+      padding: 8px 50px;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 11px;
+      transform: rotate(45deg);
+      letter-spacing: 1px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .price-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-light);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .old-price {
+      font-family: 'Lora', serif;
+      font-size: 1.5rem;
+      text-decoration: line-through;
+      color: #999;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .new-price {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(3.5rem, 10vw, 5rem);
+      color: var(--success);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .new-price small {
+      display: block;
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      color: var(--text-body);
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .price-savings {
+      background: linear-gradient(135deg, var(--success) 0%, var(--success-dark) 100%);
+      color: var(--white);
+      padding: 12px 28px;
+      border-radius: 3px;
+      display: inline-block;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-top: 18px;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(46,125,50,0.35);
+    }
+
+    /* === CTA BUTTON === */
+    .cta-button {
+      background: linear-gradient(135deg, var(--success-dark) 0%, var(--success) 50%, #43A047 100%);
+      color: var(--white);
+      border: none;
+      padding: 22px 40px;
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 30px rgba(46,125,50,0.4);
+      position: relative;
+      overflow: hidden;
+      letter-spacing: 1px;
+      display: block;
+      width: calc(100% - 50px);
+      max-width: 520px;
+      margin: 0 auto;
+      text-decoration: none;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      transition: left 0.6s;
+    }
+
+    .cta-button:hover::before { left: 100%; }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(46,125,50,0.55);
+    }
+
+    .cta-sub {
+      text-align: center;
+      margin-top: 14px;
+      font-family: 'Lora', serif;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      padding: 0 25px;
+    }
+
+    .cta-sub span {
+      color: var(--success);
+      font-weight: 700;
+    }
+
+    /* === BONUS SECTION === */
+    .bonus-section {
+      padding: 50px 0;
+      background: linear-gradient(180deg, var(--parchment) 0%, var(--cream) 100%);
+    }
+
+    .bonus-item {
+      background: var(--white);
+      border-radius: 5px;
+      padding: 30px;
+      margin: 0 25px 22px;
+      border-left: 5px solid var(--gold);
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    }
+
+    .bonus-item:hover {
+      transform: translateX(6px);
+      border-left-width: 8px;
+      box-shadow: 0 6px 25px rgba(201,162,39,0.12);
+    }
+
+    .bonus-number {
+      background: linear-gradient(135deg, var(--burgundy) 0%, var(--gold-dark) 100%);
+      color: var(--white);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .bonus-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 4px 12px;
+      border-radius: 3px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .bonus-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-dark);
+    }
+
+    .bonus-description {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 15px;
+      color: var(--text-light);
+    }
+
+    .bonus-price {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+    }
+
+    .bonus-price-old {
+      font-family: 'Lora', serif;
+      color: var(--red-accent);
+      text-decoration: line-through;
+      font-size: 1.05rem;
+    }
+
+    .bonus-price-new {
+      font-family: 'Cinzel', serif;
+      color: var(--success);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    /* === GUARANTEE === */
+    .guarantee {
+      background: var(--white);
+      border-radius: 5px;
+      padding: 40px 30px;
+      margin: 40px 25px;
+      text-align: center;
+      border: 2px solid var(--success);
+      box-shadow: 0 6px 25px rgba(46,125,50,0.1);
+    }
+
+    .guarantee-icon { font-size: 55px; margin-bottom: 12px; }
+
+    .guarantee-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      color: var(--success);
+      margin-bottom: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .guarantee-text {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text-body);
+    }
+
+    .guarantee-text strong { color: var(--text-dark); }
+
+    /* === TESTIMONIALS === */
+    .comments-section {
+      padding: 50px 0;
+      background: var(--parchment);
+    }
+
+    .comment {
+      background: var(--white);
+      border-radius: 5px;
+      padding: 25px;
+      margin: 0 25px 18px;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+    }
+
+    .comment-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .comment-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--burgundy) 0%, var(--burgundy-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .comment-author {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+    }
+
+    .comment-location {
+      font-family: 'Lora', serif;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    .comment-rating {
+      color: #FFD700;
+      font-size: 0.9rem;
+      margin-top: 2px;
+    }
+
+    .comment-text {
+      font-family: 'Lora', serif;
+      line-height: 1.75;
+      color: var(--text-body);
+      font-size: 0.95rem;
+    }
+
+    /* === FAQ === */
+    .faq-section {
+      padding: 50px 25px;
+      background: var(--cream);
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 5px;
+      margin-bottom: 12px;
+      border: 1px solid var(--cream-dark);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 20px 25px;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-dark);
+      transition: background 0.3s ease;
+    }
+
+    .faq-question:hover { background: var(--parchment); }
+
+    .faq-arrow {
+      transition: transform 0.3s ease;
+      font-size: 1.2rem;
+      color: var(--gold-dark);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      padding: 0 25px;
+      font-family: 'Lora', serif;
+      line-height: 1.75;
+      color: var(--text-body);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 0 25px 22px;
+    }
+
+    .faq-item.active .faq-arrow { transform: rotate(180deg); }
+
+    /* === DECLINE === */
+    .decline-link {
+      text-align: center;
+      margin: 25px 0 40px;
+      padding: 0 25px;
+    }
+
+    .decline-link a {
+      font-family: 'Lora', serif;
+      color: #999;
+      font-size: 0.78rem;
+      text-decoration: none;
+      opacity: 0.4;
+      transition: opacity 0.3s ease;
+      font-style: italic;
+    }
+
+    .decline-link a:hover { opacity: 0.7; }
+
+    /* === FOOTER === */
+    .footer-strip {
+      background: var(--dark);
+      padding: 30px 25px;
+      text-align: center;
+      font-family: 'Lora', serif;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.3);
+      line-height: 1.7;
+      border-top: 2px solid var(--gold-dark);
+    }
+
+    /* ========================================
+       BACK REDIRECT MODAL
+    ======================================== */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(26,10,10,0.92);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .modal-overlay.active { display: flex; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-box {
+      background: var(--cream);
+      border-radius: 5px;
+      max-width: 520px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      position: relative;
+      animation: modalReveal 0.5s ease;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px rgba(201,162,39,0.15);
+      border: 2px solid var(--gold-dark);
+    }
+
+    @keyframes modalReveal {
+      from { transform: translateY(40px) scale(0.96); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, var(--burgundy) 0%, var(--dark) 100%);
+      padding: 28px 25px;
+      text-align: center;
+      color: var(--white);
+      border-bottom: 3px solid var(--gold);
+      position: relative;
+    }
+
+    .modal-header::before {
+      content: '✝';
+      position: absolute;
+      top: 10px; left: 15px;
+      font-size: 1.3rem;
+      color: rgba(201,162,39,0.2);
+    }
+
+    .modal-header::after {
+      content: '✝';
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 1.3rem;
+      color: rgba(201,162,39,0.2);
+    }
+
+    .modal-header h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--gold);
+    }
+
+    .modal-header p {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    .modal-body {
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .modal-sacred-icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+      display: inline-block;
+      animation: gentleFloat 3s ease-in-out infinite;
+      filter: drop-shadow(0 0 15px rgba(201,162,39,0.4));
+    }
+
+    .modal-body h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .modal-body h3 .hl { color: var(--burgundy); }
+
+    .modal-body .modal-text {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text-body);
+      margin-bottom: 28px;
+    }
+
+    .modal-old-price {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      text-decoration: line-through;
+      color: #999;
+      font-weight: 600;
+    }
+
+    .modal-new-price {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3.5rem;
+      color: var(--success);
+      line-height: 1;
+      margin: 8px 0;
+      font-weight: 700;
+    }
+
+    .modal-new-price small {
+      display: block;
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      color: var(--text-body);
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .modal-savings-badge {
+      background: linear-gradient(135deg, var(--success) 0%, var(--success-dark) 100%);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: 3px;
+      display: inline-block;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin: 18px 0 28px;
+      letter-spacing: 1px;
+    }
+
+    .modal-cta {
+      background: linear-gradient(135deg, var(--success-dark) 0%, var(--success) 50%, #43A047 100%);
+      color: var(--white);
+      border: none;
+      padding: 20px 35px;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(46,125,50,0.4);
+      letter-spacing: 1px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .modal-cta::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      transition: left 0.6s;
+    }
+
+    .modal-cta:hover::before { left: 100%; }
+
+    .modal-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(46,125,50,0.55);
+    }
+
+    .modal-guarantee-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 15px;
+      font-family: 'Lora', serif;
+      font-size: 0.85rem;
+      color: var(--success);
+      font-weight: 600;
+    }
+
+    .modal-decline {
+      margin-top: 22px;
+    }
+
+    .modal-decline a {
+      font-family: 'Lora', serif;
+      color: #999;
+      font-size: 0.72rem;
+      text-decoration: none;
+      opacity: 0.35;
+      transition: opacity 0.3s;
+      font-style: italic;
+    }
+
+    .modal-decline a:hover { opacity: 0.6; }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .new-price { font-size: 3.5rem; }
+      .cta-button { padding: 20px 25px; font-size: 1rem; }
+      .time-unit { min-width: 85px; padding: 14px; }
+      .time-value { font-size: 2.3rem; }
+      .bonus-item { padding: 22px; }
+      .modal-new-price { font-size: 2.8rem; }
+      .modal-header h2 { font-size: 1.25rem; }
+      .price-ribbon { font-size: 9px; top: 18px; right: -35px; }
+    }
+
+    @media (max-width: 400px) {
+      .countdown { gap: 10px; }
+      .time-unit { min-width: 72px; padding: 12px; }
+      .time-value { font-size: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-sacred"></div>
+
+  <!-- SACRED BANNER -->
+  <div class="sacred-banner">
+    ✝ Revelação Sagrada — Esta Mensagem Pode Ser Removida a Qualquer Instante ✝
+  </div>
+
+  <div class="container">
+
+    <!-- ===== HERO ===== -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="cross-icon"></div>
+        <div class="hero-badge">Manuscrito do Padre Pio</div>
+        <h1>A <span class="gold">Oração Sagrada</span> do Arcanjo Miguel Que o Vaticano <span class="gold">Escondeu</span> por Décadas</h1>
+        <p class="hero-subtitle">Um manuscrito misterioso encontrado na paróquia do <strong>Padre Pio</strong> em San Giovanni Rotondo revelou a oração que <strong>conecta você diretamente ao Arcanjo Miguel</strong> — o anjo cuja força é semelhante à do próprio Deus.</p>
+      </div>
+    </div>
+
+    <!-- ===== VERSE ===== -->
+    <div class="verse-box">
+      "Eis que eu envio um anjo adiante de ti, para que te guarde pelo caminho e te leve ao lugar que tenho preparado."
+      <span class="verse-ref">— Êxodo 23:20</span>
+    </div>
+
+    <!-- ===== ANGEL MESSAGE ===== -->
+    <div class="angel-message">
+      <p>"Meu filho, você tem me ignorado e eu estou triste por isso. Você tem fingido que não vê os sinais, e este vídeo é mais um sinal que estou te enviando. Eu fui designado como seu anjo, mas você me rejeitou. Eu vejo você orando por dinheiro, por saúde, por um milagre, mas quando eu envio a resposta, você vira as costas.<br><br>
+      Mas hoje, pela última vez, eu decidi te dar uma chance. Se você ficar, eu verei que finalmente aceitou as bênçãos que tenho para você, e em até <strong>24 horas</strong>, a bênção financeira que você nunca recebeu será entregue em suas mãos."</p>
+      <span class="angel-sig">— São Miguel Arcanjo</span>
+    </div>
+
+    <!-- ===== SACRED DIVIDER ===== -->
+    <div class="sacred-divider"><span>✝</span></div>
+
+    <!-- ===== STORY SECTION ===== -->
+    <div class="content-section">
+      <h2 class="section-title">Por Que Sua Vida Está <span class="hl">Travada</span>?</h2>
+
+      <p class="story-text">Se hoje você sente que o <strong>dinheiro não fica nas suas mãos</strong>, que sempre falta algo, que as coisas boas da vida parecem inatingíveis — saiba que <strong>tudo isso acontece porque a conexão com seu anjo da guarda está bloqueada.</strong></p>
+
+      <p class="story-text">As frequências emitidas por antenas de rádio, TV, celulares e satélites sufocam a <strong>frequência angelical divina</strong> e impedem que nós, filhos de Deus, nos conectemos ao Sagrado. Não é culpa sua. Não é falta de esforço ou de fé.</p>
+
+      <div class="story-highlight">
+        Em <span class="gold">Apocalipse 12</span>, Miguel lidera os exércitos de Deus contra Satanás e o derrota. A tradução literal de seu nome é <span class="gold">"Aquele que é como Deus"</span>. Ele é o Arcanjo com <span class="gold">maior poder de manifestação</span> — e se ele foi designado como seu protetor, sua vida está prestes a mudar para sempre.
+      </div>
+
+      <p class="story-text">Quando o <strong>Padre Pio</strong> realizava milagres, não era por poder próprio. Ele havia redescoberto orações especiais que vibram na <strong>frequência angelical divina</strong> — a chave que abre as portas dos céus. Esse conhecimento foi levado ao Vaticano, que o considerou <strong>"perigoso demais para as massas"</strong> e o trancou a sete chaves.</p>
+
+      <p class="story-text">Mas agora, pela vontade de Deus, esse conhecimento sagrado está chegando diretamente até você.</p>
+    </div>
+
+    <!-- ===== VERSE 2 ===== -->
+    <div class="verse-box">
+      "Peçam e lhes será dado; busquem e encontrarão; batam e a porta lhes será aberta."
+      <span class="verse-ref">— Mateus 7:7</span>
+    </div>
+
+    <!-- ===== BENEFITS ===== -->
+    <div class="content-section" style="padding-top: 15px;">
+      <h2 class="section-title">O Que o Arcanjo Miguel <span class="hl">Fará Na Sua Vida</span></h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <div class="benefit-text">
+            <h4>Desbloqueio da Prosperidade</h4>
+            <p>As correntes da miséria são cortadas pela espada flamejante de Miguel. Dinheiro, oportunidades e abundância começam a fluir como nunca antes.</p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">✝️</div>
+          <div class="benefit-text">
+            <h4>Cura Divina do Corpo e da Alma</h4>
+            <p>Enfermidades são expulsas quando a conexão angelical é restaurada. Doenças que tiravam seu sono perdem toda a força diante do poder de Deus.</p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <div class="benefit-text">
+            <h4>Proteção Celestial Contra Todo Mal</h4>
+            <p>Inveja, mau-olhado, feitiçaria e as forças das trevas são aniquiladas pela armadura sagrada do Arcanjo Miguel.</p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">❤️</div>
+          <div class="benefit-text">
+            <h4>Restauração dos Seus Relacionamentos</h4>
+            <p>Casamentos, famílias e laços de amor são restaurados pela poderosa intercessão do líder do exército celestial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TIMER ===== -->
+    <div class="timer-section">
+      <div class="timer-label">✝ Esta Oferta Expira Em ✝</div>
+      <div class="countdown" id="countdown">
+        <div class="time-unit">
+          <span class="time-value" id="minutes">15</span>
+          <span class="time-label-text">Minutos</span>
+        </div>
+        <div class="time-unit">
+          <span class="time-value" id="seconds">00</span>
+          <span class="time-label-text">Segundos</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PRICE BOX ===== -->
+    <div class="price-box" id="main-offer">
+      <div class="price-ribbon">Última Chance</div>
+      <div class="price-label">Contribuição Simbólica</div>
+      <div class="old-price">De R$ 199,90</div>
+      <div class="new-price">R$ 97
+        <small>ou 12x de R$ 9,67</small>
+      </div>
+      <div class="price-savings">✝ Acesso Completo + 3 Bônus Sagrados</div>
+    </div>
+
+    <a href="https://checkout.ticto.app/ODFAC864A" class="cta-button" id="main-cta">
+      ✝ Quero a Oração Sagrada do Arcanjo Miguel
+    </a>
+    <p class="cta-sub">🔒 Pagamento 100% seguro · <span>Acesso imediato por e-mail e WhatsApp</span></p>
+
+    <!-- ===== SACRED DIVIDER ===== -->
+    <div class="sacred-divider"><span>⚔️</span></div>
+
+    <!-- ===== BONUSES ===== -->
+    <div class="bonus-section">
+      <h2 class="section-title" style="padding: 0 25px;">Bônus <span class="gold-hl">Sagrados</span> Gratuitos</h2>
+
+      <div class="bonus-item">
+        <div class="bonus-number">1</div>
+        <span class="bonus-tag">Grátis</span>
+        <h3 class="bonus-title">Orações de Milagre do Padre Pio</h3>
+        <p class="bonus-description">As principais orações utilizadas pelo próprio Padre Pio para realizar milagres em sua época. Cada uma resgatada dos registros antigos do Santuário de São Pio de Pietrelcina — orações que curavam enfermos, restauravam famílias e traziam prosperidade sobrenatural.</p>
+        <div class="bonus-price">
+          <span class="bonus-price-old">R$ 197,00</span>
+          <span class="bonus-price-new">GRÁTIS</span>
+        </div>
+      </div>
+
+      <div class="bonus-item">
+        <div class="bonus-number">2</div>
+        <span class="bonus-tag">Grátis</span>
+        <h3 class="bonus-title">Orações Guiadas do Frei Gilson</h3>
+        <p class="bonus-description">O próprio Frei Gilson, ao conhecer esta missão sagrada, decidiu contribuir com orações e orientações especiais. Neste bônus exclusivo, você receberá orações guiadas e ensinamentos de como orar com poder e autoridade espiritual.</p>
+        <div class="bonus-price">
+          <span class="bonus-price-old">R$ 290,00</span>
+          <span class="bonus-price-new">GRÁTIS</span>
+        </div>
+      </div>
+
+      <div class="bonus-item">
+        <div class="bonus-number">3</div>
+        <span class="bonus-tag">Grátis</span>
+        <h3 class="bonus-title">Coletânea dos Maiores Louvores Sagrados</h3>
+        <p class="bonus-description">Uma seleção poderosa dos maiores louvores de Padre Marcelo Rossi, Padre Fábio de Melo, Padre Reginaldo Manzotti e Frei Gilson. Louvores que edificam a sua alma, afastam todo mal e fortalecem sua caminhada com Deus.</p>
+        <div class="bonus-price">
+          <span class="bonus-price-old">R$ 390,00</span>
+          <span class="bonus-price-new">GRÁTIS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECOND CTA ===== -->
+    <div style="text-align: center; padding: 45px 0; background: linear-gradient(180deg, var(--parchment) 0%, var(--cream) 100%);">
+      <h2 class="section-title" style="padding: 0 25px;">Não Ignore o Chamado do <span class="hl">Arcanjo Miguel</span></h2>
+
+      <div class="price-box">
+        <div class="price-ribbon">Última Chance</div>
+        <div class="price-label">Contribuição Simbólica</div>
+        <div class="old-price">De R$ 199,90</div>
+        <div class="new-price">R$ 97
+          <small>ou 12x de R$ 9,67</small>
+        </div>
+        <div class="price-savings">✝ Acesso Completo + 3 Bônus Sagrados</div>
+      </div>
+
+      <a href="https://checkout.ticto.app/ODFAC864A" class="cta-button">
+        🔥 Garantir Minha Oração Sagrada Agora
+      </a>
+      <p class="cta-sub">📞 Você receberá uma ligação de confirmação · <span>Acesso imediato</span></p>
+    </div>
+
+    <!-- ===== GUARANTEE ===== -->
+    <div class="guarantee">
+      <div class="guarantee-icon">🛡️</div>
+      <div class="guarantee-title">Garantia Sagrada de 30 Dias</div>
+      <p class="guarantee-text">Sua segurança é total. Você tem <strong>30 dias inteiros de garantia</strong> para usar a Oração Sagrada do Arcanjo Miguel. Se em até 30 dias você sentir que não houve transformação na sua vida, basta nos enviar um e-mail e devolveremos <strong>100% do valor da contribuição</strong>. Sem perguntas e sem letras miúdas. O risco é todo nosso. Apenas teste por 30 dias e só então decida se deseja manter sua oração sagrada.</p>
+    </div>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <div class="comments-section">
+      <h2 class="section-title" style="padding-top: 10px;">Testemunhos de <span class="hl">Transformação</span></h2>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">R</div>
+          <div>
+            <div class="comment-author">Rita de Cássia</div>
+            <div class="comment-location">São Paulo, SP</div>
+            <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p class="comment-text">"Fiz meu cadastro e em poucos minutos já estava com o acesso liberado. Comecei a orar no mesmo dia e em menos de uma semana recebi uma proposta de emprego que eu nem esperava. O Padre Miguel Inácio ainda me ligou pessoalmente. Glória a Deus!"</p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">S</div>
+          <div>
+            <div class="comment-author">Sebastião Oliveira</div>
+            <div class="comment-location">Belo Horizonte, MG</div>
+            <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p class="comment-text">"Comecei a rezar a oração sagrada há dois dias e ontem ganhei um prêmio de R$ 2.000 na Lotofácil. Não é coincidência — é o meu anjo liberando a prosperidade. Quando você se conecta com o Arcanjo Miguel, a sorte deixa de ser acaso."</p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">T</div>
+          <div>
+            <div class="comment-author">Teresa</div>
+            <div class="comment-location">Recife, PE</div>
+            <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p class="comment-text">"Ganhei R$ 500 em vale-compras de um sorteio que nem lembrava. Sorteios, presentes, coisas inesperadas começaram a aparecer depois que comecei a Oração Sagrada. Minha frequência mudou completamente. Deus é maravilhoso!"</p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">M</div>
+          <div>
+            <div class="comment-author">Maria do Carmo</div>
+            <div class="comment-location">Curitiba, PR</div>
+            <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p class="comment-text">"Eu tinha uma dívida antiga que parecia impossível. Cinco dias depois de começar a oração, o gerente do banco ligou dizendo que a dívida tinha sido perdoada. Soluções que só Deus poderia enviar através do Arcanjo Miguel."</p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">A</div>
+          <div>
+            <div class="comment-author">Antônio Luiz</div>
+            <div class="comment-location">Florianópolis, SC</div>
+            <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p class="comment-text">"Sonhei com um anjo me entregando uma chave dourada. Na mesma semana, recebi uma proposta de negócio que triplicou minha renda. Os sinais espirituais são reais. O Arcanjo Miguel age poderosamente na vida de quem crê!"</p>
+      </div>
+
+      <div class="comment">
+        <div class="comment-header">
+          <div class="comment-avatar">F</div>
+          <div>
+            <div class="comment-author">Filipe Santana</div>
+            <div class="comment-location">Recife, PE</div>
+            <div class="comment-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p class="comment-text">"Problemas de saúde que destruíam meu casamento. Na primeira semana fazendo a oração sagrada, senti meu corpo sendo lavado de toda enfermidade. Meu casamento foi restaurado pela graça de Deus. Aleluia!"</p>
+      </div>
+    </div>
+
+    <!-- ===== FAQ ===== -->
+    <div class="faq-section">
+      <h2 class="section-title">Dúvidas <span class="hl">Frequentes</span></h2>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>O acesso é liberado imediatamente?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">Sim. Assim que você confirmar sua contribuição, o acesso completo à Oração Sagrada do Arcanjo Miguel e todos os 3 bônus será enviado imediatamente para o seu e-mail e WhatsApp. Você também receberá uma ligação pessoal para garantir que está tudo certo.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Preciso ser católico para a oração funcionar?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">Não. Você não precisa ser católico ou sequer religioso. Todos nós, ao nascer, somos guiados por um anjo. Tudo o que você precisa fazer é fortalecer essa conexão através da oração sagrada, e um fluxo de bênçãos começará a entrar na sua vida.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>E se eu não ver resultados? Posso pedir reembolso?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">Absolutamente. Você tem 30 dias inteiros de garantia. Se em até 30 dias você sentir que não houve transformação, basta enviar um e-mail e devolveremos 100% do valor. Sem perguntas e sem letras miúdas. O risco é completamente nosso.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Em quanto tempo posso ver os primeiros resultados?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">Muitas pessoas relatam transformações nos primeiros 3 a 7 dias — desde ganhos financeiros inesperados até curas, sonhos proféticos e restauração de relacionamentos. O Arcanjo Miguel age com a mesma intensidade com que vence suas batalhas celestiais.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Qual o melhor horário para fazer a oração?</span>
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">Segundo os manuscritos do Padre Pio, o horário mais poderoso é entre as 4h e 7h da manhã — quando o véu entre os mundos é mais fino e a conexão angelical é mais forte. Tudo isso é explicado em detalhes no material que você recebe.</div>
+      </div>
+    </div>
+
+    <!-- ===== FINAL CTA ===== -->
+    <div style="text-align: center; padding: 45px 0; background: var(--cream);">
+
+      <div class="verse-box" style="margin-bottom: 35px;">
+        "Porque aos seus anjos dará ordens a teu respeito, para te guardarem em todos os teus caminhos."
+        <span class="verse-ref">— Salmo 91:11</span>
+      </div>
+
+      <a href="https://checkout.ticto.app/ODFAC864A" class="cta-button">
+        ✝ Quero Me Conectar Com o Arcanjo Miguel
+      </a>
+      <p class="cta-sub">🔒 Garantia sagrada de 30 dias · <span>100% do dinheiro de volta se não houver transformação</span></p>
+    </div>
+
+    <div class="decline-link">
+      <a href="#">Não, obrigado. Prefiro continuar sem essa bênção.</a>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="footer-strip">
+      Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados.<br>
+      © 2026 — Todos os direitos reservados. ✝
+    </div>
+  </div>
+
+  <!-- ===================================
+       BACK REDIRECT MODAL
+  ==================================== -->
+  <div class="modal-overlay" id="backModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>✝ Espere! O Arcanjo Tem Uma Última Mensagem</h2>
+        <p>"Não feche esta porta. Esta é a minha última tentativa de te alcançar."</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-sacred-icon">⚔️</div>
+        <h3>Você Estava Prestes a <span class="hl">Rejeitar</span> Sua Bênção</h3>
+        <p class="modal-text">
+          Eu sei que pode parecer difícil neste momento. Mas lembre-se das palavras do Arcanjo Miguel: <strong>"Se você sair, estará me rejeitando pela última vez."</strong><br><br>
+          Esta é a sua <strong>última oportunidade</strong> de restaurar a conexão com o seu anjo da guarda e desbloquear todas as bênçãos que já estão te esperando.
+        </p>
+        <div class="modal-old-price">De R$ 199,90</div>
+        <div class="modal-new-price">R$ 97
+          <small>ou 12x de R$ 9,67</small>
+        </div>
+        <div class="modal-savings-badge">✝ Acesso Completo + 3 Bônus Sagrados</div>
+        <br>
+        <button class="modal-cta" onclick="window.location.href='https://checkout.ticto.app/ODFAC864A'">
+          ✝ SIM! Quero Receber Minha Bênção
+        </button>
+        <div class="modal-guarantee-line">🛡️ Garantia sagrada de 30 dias · Risco zero</div>
+        <div class="modal-decline">
+          <a href="#" onclick="document.getElementById('backModal').classList.remove('active');document.body.style.overflow='';return false;">Não, prefiro rejeitar o chamado do Arcanjo Miguel.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // === COUNTDOWN ===
+    let timeLeft = 15 * 60;
+    function updateCountdown() {
+      const m = Math.floor(timeLeft / 60);
+      const s = timeLeft % 60;
+      document.getElementById('minutes').textContent = m.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = s.toString().padStart(2, '0');
+      if (timeLeft > 0) timeLeft--;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // === BACK REDIRECT (popstate) ===
+    let modalShown = false;
+
+    history.pushState(null, '', window.location.href);
+    history.pushState(null, '', window.location.href);
+
+    window.addEventListener('popstate', function (e) {
+      if (!modalShown) {
+        modalShown = true;
+        document.getElementById('backModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        history.pushState(null, '', window.location.href);
+      } else {
+        history.pushState(null, '', window.location.href);
+      }
+    });
+
+    window.addEventListener('beforeunload', function (e) {
+      if (!modalShown) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    });
+
+    document.getElementById('backModal').addEventListener('click', function (e) {
+      if (e.target === this) {
+        this.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // === FAQ ACCORDION ===
+    document.querySelectorAll('.faq-question').forEach(function (q) {
+      q.addEventListener('click', function () {
+        const item = this.parentElement;
+        const wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.remove('active'); });
+        if (!wasActive) item.classList.add('active');
+      });
+    });
+  </script>
+
+
+
+</body></html>
